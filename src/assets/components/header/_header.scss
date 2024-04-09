@@ -1,0 +1,54 @@
+.header {
+	&__container {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		gap: 20px;
+	}
+
+	&__links {
+		display: flex;
+		gap: 10px;
+	}
+
+	&__link {
+		display: grid;
+		place-items: center;
+		width: 40px;
+		height: 40px;
+		border-radius: 6px;
+
+		@include hover {
+			background-color: rgba(247, 247, 247, 0.4);
+		}
+	}
+}
+
+.wishlist {
+	position: relative;
+	&.active {
+		.wishlist__icon {
+			fill: red;
+		}
+	}
+}
+
+.cart {
+	position: relative;
+}
+
+.counter-badge {
+	position: absolute;
+	top: 0;
+	left: 22px;
+
+	color: #fff;
+	background-color: #db5634;
+
+	display: grid;
+	place-items: center;
+	padding: 1px 5px;
+
+	border-radius: 10px;
+	font-size: 14px;
+}

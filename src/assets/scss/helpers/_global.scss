@@ -1,0 +1,58 @@
+body {
+	font: 400 16px/1.15 var(--font-family);
+
+	background-image: linear-gradient(
+		to right top,
+		#d16ba5,
+		#c777b9,
+		#ba83ca,
+		#aa8fd8,
+		#9a9ae1,
+		#8aa7ec,
+		#79b3f4,
+		#69bff8,
+		#52cffe,
+		#41dfff,
+		#46eefa,
+		#5ffbf1
+	);
+
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.app {
+	display: flex;
+	flex-direction: column;
+
+	overflow: hidden;
+
+	min-height: 100vh;
+}
+
+.main {
+	flex-grow: 1;
+}
+
+.container {
+	--padding: 15px;
+	--width: 1200px;
+
+	margin: 0 auto;
+
+	max-width: calc(var(--width) + var(--padding));
+	width: 100%;
+
+	padding: 0 var(--padding);
+}
+
+.hidden {
+	display: none !important;
+}
+
+.glass-effect {
+	background: rgba(255, 255, 255, 0.2);
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+	backdrop-filter: blur(5px);
+	-webkit-backdrop-filter: blur(5px);
+	border: 1px solid rgba(255, 255, 255, 0.3);
+}
