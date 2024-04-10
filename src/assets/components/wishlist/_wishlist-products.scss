@@ -1,6 +1,10 @@
-.wishlist-products {
-	padding: 30px 0;
+.wishlist-page {
+	&__inner {
+		padding: 30px 0;
+	}
+}
 
+.wishlist-products {
 	display: flex;
 	flex-direction: column;
 	gap: 20px;

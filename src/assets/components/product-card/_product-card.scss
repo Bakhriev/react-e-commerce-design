@@ -29,6 +29,8 @@
 	&__bottom {
 		display: flex;
 		flex-direction: column;
+		flex-wrap: wrap;
+		gap: 20px;
 	}
 
 	&__price {
@@ -58,22 +60,11 @@
 	}
 
 	&__btn {
-		display: grid;
-		place-items: center;
-		width: 40px;
-		height: 40px;
-		border-radius: 6px;
-		@include hover {
-			background-color: rgba(247, 247, 247, 0.4);
-		}
 		&.active {
 			background-color: #e26161;
 			@include hover {
 				background-color: #e64b4b;
 			}
-		}
-		&:active {
-			scale: 0.97;
 		}
 	}
 }

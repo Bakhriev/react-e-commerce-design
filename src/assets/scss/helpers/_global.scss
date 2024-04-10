@@ -56,3 +56,38 @@ body {
 	-webkit-backdrop-filter: blur(5px);
 	border: 1px solid rgba(255, 255, 255, 0.3);
 }
+
+.action-btn {
+	display: grid;
+	place-items: center;
+	width: 40px;
+	height: 40px;
+	border-radius: 6px;
+	@include hover {
+		background-color: rgba(247, 247, 247, 0.4);
+	}
+
+	&:active {
+		scale: 0.97;
+	}
+}
+
+.count-buttons {
+	border: 1px solid rgba(247, 247, 247, 0.4);
+	padding: 2px;
+	border-radius: 10px;
+
+	display: flex;
+	align-items: center;
+	&__btn {
+		color: #fff;
+		font-weight: 700;
+		font-size: 20px;
+	}
+	&__counter {
+		font-size: 14px;
+		color: #fff;
+		width: 15px;
+		text-align: center;
+	}
+}
